@@ -19,7 +19,7 @@ spring:
     dbname: topEducationCuotas
     url: jdbc:postgresql://localhost:5432/topEducationCuotas
     username: postgres
-    password: Simon_789
+    password: 1234
   servlet:
     multipart:
       max-file-size: 5MB

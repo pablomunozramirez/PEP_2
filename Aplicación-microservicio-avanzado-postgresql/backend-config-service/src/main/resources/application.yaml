@@ -7,6 +7,6 @@ spring:
     config:
       server:
         git:
-          default-label: master
-          uri: https://github.com/SimonSaezCorrea/Mingeso-Tingeso-Ayudantia
-          search-paths: "Unidad 2/Aplicación-microservicio-avanzado-postgresql/config-data"
+          default-label: main
+          uri: https://github.com/pablomunozramirez/PEP_2
+          search-paths: "Aplicación-microservicio-avanzado-postgresql/config-data"
