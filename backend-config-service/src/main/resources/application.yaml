@@ -9,4 +9,4 @@ spring:
         git:
           default-label: main
           uri: https://github.com/pablomunozramirez/PEP_2
-          search-paths: "Aplicación-microservicio-avanzado-postgresql/config-data"
+          search-paths: "config-data"
