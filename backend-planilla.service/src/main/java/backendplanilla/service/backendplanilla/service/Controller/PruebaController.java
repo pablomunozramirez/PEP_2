@@ -17,9 +17,6 @@ public class PruebaController {
     @Autowired
     PruebaService pruebaService;
 
-
-
-
     @PostMapping("/cargar")
     public ResponseEntity<String> cargarDatos(@RequestParam("file") MultipartFile file, Model model) {
         String mensaje = pruebaService.guardar(file);
