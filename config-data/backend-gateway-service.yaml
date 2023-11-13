@@ -38,4 +38,3 @@ spring:
           uri: lb://backend-planilla-service
           predicates:
             - Path=/planilla/**
-            - Path=/prueba/**
