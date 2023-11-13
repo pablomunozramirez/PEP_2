@@ -37,4 +37,5 @@ spring:
         - id: backend-planilla-service
           uri: lb://backend-planilla-service
           predicates:
-            - Path=/planilla/**
+            - Path=/prueba/**
+            - Path=/arancel/**
