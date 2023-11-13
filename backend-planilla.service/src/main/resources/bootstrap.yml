@@ -3,7 +3,7 @@ spring:
     restart:
       aditional-paths: src/main/java
   application:
-    name: backend-planilla.service
+    name: backend-planilla-service
   jpa:
     database: POSTGRESQL
     show-sql: true
