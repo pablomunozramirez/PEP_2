@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/prueba")
+@RequestMapping("/arancel/prueba")
 public class PruebaController {
     @Autowired
     PruebaService pruebaService;
