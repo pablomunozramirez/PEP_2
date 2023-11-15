@@ -194,7 +194,7 @@ public class ArancelService {
 
     public List<EstudianteEntity> findAllEstudiantes() {
         ResponseEntity<List<EstudianteEntity>> response = restTemplate.exchange(
-                "http://localhost:8080/estudiante/mostrarestudiante",
+                "http://backend-gateway-service:8080/estudiante/mostrarestudiante",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<EstudianteEntity>>() {}
@@ -236,7 +236,7 @@ public class ArancelService {
 
     public Long countByRutCuota(String rut){
         ResponseEntity<Long> response = restTemplate.exchange(
-                "http://localhost:8080/cuotas/contar/"+rut,
+                "http://backend-gateway-service:8080/cuotas/contar/"+rut,
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<Long>() {}
@@ -259,7 +259,7 @@ public class ArancelService {
     }
     public List<CuotaEntity> findByRutCuota(String rut) {
         ResponseEntity<List<CuotaEntity>> response = restTemplate.exchange(
-                "http://localhost:8080/cuotas/"+rut,
+                "http://backend-gateway-service:8080/cuotas/"+rut,
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<CuotaEntity>>() {}
@@ -268,7 +268,7 @@ public class ArancelService {
     }
 
     public void save(CuotaEntity cuota) {
-        String url = "http://localhost:8080/cuotas";
+        String url = "http://backend-gateway-service:8080/cuotas";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);

@@ -26,7 +26,7 @@ public class ArancelController {
     }
 
     @PostMapping("/mostrar")
-    public ResponseEntity<ArrayList<ArancelEntity>> mostrarArancel(Model model, RedirectAttributes redirectAttributes) {
+    public ResponseEntity<ArrayList<ArancelEntity>> mostrarArancel() {
         ArrayList<ArancelEntity> resumenList = arancelService.resumenArancel();
         return ResponseEntity.ok(resumenList);
     }

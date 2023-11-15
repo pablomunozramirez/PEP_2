@@ -12,14 +12,13 @@ spring:
   cloud:
     config:
       enabled: true
-      uri: http://localhost:8081
+      uri: http://backend-config-service:8081
   datasource:
     plataform: postgres
     driver-class-name: org.postgresql.Driver
-    dbname: topEducationEstudiantes
-    url: jdbc:postgresql://localhost:5432/topEducationEstudiantes
-    username: postgres
-    password: 1234
+    url: jdbc:postgresql://${POSTGRES_DB_HOST}:5432/${POSTGRES_DB_ESTUDIANTES}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
   servlet:
     multipart:
       max-file-size: 5MB
